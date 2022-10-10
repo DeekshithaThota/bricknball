@@ -62,7 +62,10 @@ public class Game_imp extends JPanel  implements KeyListener, ActionListener {
         for(int i=1;i<n-1;i++){
             for(int j=1;j<m;j++){
                 if((new Rectangle(BallposX,BallposY,20,20)).intersects(new Rectangle(i*100,j*40,100,40))){
-                    g.clearRect(i*100,j*40,100,40);
+
+                    g.setColor(Color.WHITE);
+                    g.fillRect(i*100,j*40,100,40);
+
                 }
             }
         }
